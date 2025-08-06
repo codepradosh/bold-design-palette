@@ -204,6 +204,27 @@ All colors MUST be HSL.
     z-index: 0;
   }
 
+  /* Mobile responsive zodiac ring */
+  @media (max-width: 768px) {
+    .zodiac-ring {
+      width: 90vw;
+      height: 90vw;
+      max-width: 600px;
+      max-height: 600px;
+      border-width: 0.5px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .zodiac-ring {
+      width: 95vw;
+      height: 95vw;
+      max-width: 400px;
+      max-height: 400px;
+      border-width: 0.3px;
+    }
+  }
+
   /* Constellation Background with Zodiac Patterns */
   .constellation-bg {
     position: fixed;
@@ -290,6 +311,162 @@ All colors MUST be HSL.
     animation: constellationTwinkle 15s ease-in-out infinite;
   }
 
+  /* Mobile responsive constellation adjustments */
+  @media (max-width: 768px) {
+    .constellation-bg {
+      background-image: 
+        /* Aries Constellation - smaller stars */
+        radial-gradient(2px 2px at 15% 20%, hsl(45 100% 80%), transparent),
+        radial-gradient(1.5px 1.5px at 18% 25%, hsl(45 100% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 22% 22%, hsl(45 100% 75%), transparent),
+        radial-gradient(1px 1px at 20% 28%, hsl(45 100% 65%), transparent),
+        
+        /* Taurus Constellation */
+        radial-gradient(3px 3px at 85% 25%, hsl(280 80% 75%), transparent),
+        radial-gradient(2px 2px at 88% 30%, hsl(280 80% 65%), transparent),
+        radial-gradient(1.5px 1.5px at 82% 28%, hsl(280 80% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 90% 35%, hsl(280 80% 60%), transparent),
+        
+        /* Gemini Constellation */
+        radial-gradient(2px 2px at 12% 40%, hsl(200 90% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 15% 45%, hsl(200 90% 60%), transparent),
+        radial-gradient(1.5px 1.5px at 18% 42%, hsl(200 90% 65%), transparent),
+        radial-gradient(1px 1px at 20% 48%, hsl(200 90% 55%), transparent),
+        
+        /* Cancer Constellation */
+        radial-gradient(2px 2px at 82% 50%, hsl(320 70% 80%), transparent),
+        radial-gradient(1.5px 1.5px at 85% 55%, hsl(320 70% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 88% 52%, hsl(320 70% 75%), transparent),
+        radial-gradient(1px 1px at 90% 58%, hsl(320 70% 65%), transparent),
+        
+        /* Leo Constellation */
+        radial-gradient(3px 3px at 25% 65%, hsl(120 80% 75%), transparent),
+        radial-gradient(2px 2px at 28% 70%, hsl(120 80% 65%), transparent),
+        radial-gradient(1.5px 1.5px at 22% 68%, hsl(120 80% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 30% 75%, hsl(120 80% 60%), transparent),
+        
+        /* Virgo Constellation */
+        radial-gradient(2px 2px at 78% 75%, hsl(30 100% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 82% 80%, hsl(30 100% 60%), transparent),
+        radial-gradient(1.5px 1.5px at 85% 77%, hsl(30 100% 65%), transparent),
+        radial-gradient(1px 1px at 88% 83%, hsl(30 100% 55%), transparent),
+        
+        /* Libra Constellation */
+        radial-gradient(2px 2px at 52% 18%, hsl(260 90% 75%), transparent),
+        radial-gradient(1.5px 1.5px at 55% 22%, hsl(260 90% 65%), transparent),
+        radial-gradient(1.5px 1.5px at 58% 20%, hsl(260 90% 70%), transparent),
+        radial-gradient(1px 1px at 60% 25%, hsl(260 90% 60%), transparent),
+        
+        /* Scorpio Constellation */
+        radial-gradient(2px 2px at 45% 82%, hsl(180 100% 65%), transparent),
+        radial-gradient(1.5px 1.5px at 48% 87%, hsl(180 100% 55%), transparent),
+        radial-gradient(1.5px 1.5px at 52% 85%, hsl(180 100% 60%), transparent),
+        radial-gradient(1px 1px at 55% 90%, hsl(180 100% 50%), transparent),
+        
+        /* Sagittarius Constellation */
+        radial-gradient(2px 2px at 72% 28%, hsl(300 80% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 75% 32%, hsl(300 80% 60%), transparent),
+        radial-gradient(1.5px 1.5px at 78% 30%, hsl(300 80% 65%), transparent),
+        radial-gradient(1px 1px at 80% 35%, hsl(300 80% 55%), transparent),
+        
+        /* Capricorn Constellation */
+        radial-gradient(2px 2px at 92% 58%, hsl(60 90% 80%), transparent),
+        radial-gradient(1.5px 1.5px at 95% 62%, hsl(60 90% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 98% 60%, hsl(60 90% 75%), transparent),
+        radial-gradient(1px 1px at 96% 65%, hsl(60 90% 65%), transparent),
+        
+        /* Aquarius Constellation */
+        radial-gradient(2px 2px at 62% 88%, hsl(45 100% 75%), transparent),
+        radial-gradient(1.5px 1.5px at 65% 92%, hsl(45 100% 65%), transparent),
+        radial-gradient(1.5px 1.5px at 68% 90%, hsl(45 100% 70%), transparent),
+        radial-gradient(1px 1px at 70% 95%, hsl(45 100% 60%), transparent),
+        
+        /* Pisces Constellation */
+        radial-gradient(2px 2px at 8% 45%, hsl(280 80% 70%), transparent),
+        radial-gradient(1.5px 1.5px at 12% 48%, hsl(280 80% 60%), transparent),
+        radial-gradient(1.5px 1.5px at 15% 46%, hsl(280 80% 65%), transparent),
+        radial-gradient(1px 1px at 18% 52%, hsl(280 80% 55%), transparent);
+    }
+  }
+
+  /* Small mobile constellation adjustments */
+  @media (max-width: 480px) {
+    .constellation-bg {
+      background-image: 
+        /* Even smaller stars for small screens */
+        radial-gradient(1.5px 1.5px at 15% 20%, hsl(45 100% 80%), transparent),
+        radial-gradient(1px 1px at 18% 25%, hsl(45 100% 70%), transparent),
+        radial-gradient(1px 1px at 22% 22%, hsl(45 100% 75%), transparent),
+        radial-gradient(0.5px 0.5px at 20% 28%, hsl(45 100% 65%), transparent),
+        
+        /* Taurus Constellation */
+        radial-gradient(2px 2px at 85% 25%, hsl(280 80% 75%), transparent),
+        radial-gradient(1.5px 1.5px at 88% 30%, hsl(280 80% 65%), transparent),
+        radial-gradient(1px 1px at 82% 28%, hsl(280 80% 70%), transparent),
+        radial-gradient(1px 1px at 90% 35%, hsl(280 80% 60%), transparent),
+        
+        /* Gemini Constellation */
+        radial-gradient(1.5px 1.5px at 12% 40%, hsl(200 90% 70%), transparent),
+        radial-gradient(1px 1px at 15% 45%, hsl(200 90% 60%), transparent),
+        radial-gradient(1px 1px at 18% 42%, hsl(200 90% 65%), transparent),
+        radial-gradient(0.5px 0.5px at 20% 48%, hsl(200 90% 55%), transparent),
+        
+        /* Cancer Constellation */
+        radial-gradient(1.5px 1.5px at 82% 50%, hsl(320 70% 80%), transparent),
+        radial-gradient(1px 1px at 85% 55%, hsl(320 70% 70%), transparent),
+        radial-gradient(1px 1px at 88% 52%, hsl(320 70% 75%), transparent),
+        radial-gradient(0.5px 0.5px at 90% 58%, hsl(320 70% 65%), transparent),
+        
+        /* Leo Constellation */
+        radial-gradient(2px 2px at 25% 65%, hsl(120 80% 75%), transparent),
+        radial-gradient(1.5px 1.5px at 28% 70%, hsl(120 80% 65%), transparent),
+        radial-gradient(1px 1px at 22% 68%, hsl(120 80% 70%), transparent),
+        radial-gradient(1px 1px at 30% 75%, hsl(120 80% 60%), transparent),
+        
+        /* Virgo Constellation */
+        radial-gradient(1.5px 1.5px at 78% 75%, hsl(30 100% 70%), transparent),
+        radial-gradient(1px 1px at 82% 80%, hsl(30 100% 60%), transparent),
+        radial-gradient(1px 1px at 85% 77%, hsl(30 100% 65%), transparent),
+        radial-gradient(0.5px 0.5px at 88% 83%, hsl(30 100% 55%), transparent),
+        
+        /* Libra Constellation */
+        radial-gradient(1.5px 1.5px at 52% 18%, hsl(260 90% 75%), transparent),
+        radial-gradient(1px 1px at 55% 22%, hsl(260 90% 65%), transparent),
+        radial-gradient(1px 1px at 58% 20%, hsl(260 90% 70%), transparent),
+        radial-gradient(0.5px 0.5px at 60% 25%, hsl(260 90% 60%), transparent),
+        
+        /* Scorpio Constellation */
+        radial-gradient(1.5px 1.5px at 45% 82%, hsl(180 100% 65%), transparent),
+        radial-gradient(1px 1px at 48% 87%, hsl(180 100% 55%), transparent),
+        radial-gradient(1px 1px at 52% 85%, hsl(180 100% 60%), transparent),
+        radial-gradient(0.5px 0.5px at 55% 90%, hsl(180 100% 50%), transparent),
+        
+        /* Sagittarius Constellation */
+        radial-gradient(1.5px 1.5px at 72% 28%, hsl(300 80% 70%), transparent),
+        radial-gradient(1px 1px at 75% 32%, hsl(300 80% 60%), transparent),
+        radial-gradient(1px 1px at 78% 30%, hsl(300 80% 65%), transparent),
+        radial-gradient(0.5px 0.5px at 80% 35%, hsl(300 80% 55%), transparent),
+        
+        /* Capricorn Constellation */
+        radial-gradient(1.5px 1.5px at 92% 58%, hsl(60 90% 80%), transparent),
+        radial-gradient(1px 1px at 95% 62%, hsl(60 90% 70%), transparent),
+        radial-gradient(1px 1px at 98% 60%, hsl(60 90% 75%), transparent),
+        radial-gradient(0.5px 0.5px at 96% 65%, hsl(60 90% 65%), transparent),
+        
+        /* Aquarius Constellation */
+        radial-gradient(1.5px 1.5px at 62% 88%, hsl(45 100% 75%), transparent),
+        radial-gradient(1px 1px at 65% 92%, hsl(45 100% 65%), transparent),
+        radial-gradient(1px 1px at 68% 90%, hsl(45 100% 70%), transparent),
+        radial-gradient(0.5px 0.5px at 70% 95%, hsl(45 100% 60%), transparent),
+        
+        /* Pisces Constellation */
+        radial-gradient(1.5px 1.5px at 8% 45%, hsl(280 80% 70%), transparent),
+        radial-gradient(1px 1px at 12% 48%, hsl(280 80% 60%), transparent),
+        radial-gradient(1px 1px at 15% 46%, hsl(280 80% 65%), transparent),
+        radial-gradient(0.5px 0.5px at 18% 52%, hsl(280 80% 55%), transparent);
+    }
+  }
+
   /* Zodiac Symbols as subtle background elements */
   .zodiac-symbols {
     position: fixed;
@@ -309,6 +486,7 @@ All colors MUST be HSL.
     animation: symbolGlow 25s ease-in-out infinite;
   }
 
+  /* Desktop positioning */
   .zodiac-symbol.aries { top: 18%; left: 20%; animation-delay: 0s; }
   .zodiac-symbol.taurus { top: 28%; left: 87%; animation-delay: -2s; }
   .zodiac-symbol.gemini { top: 42%; left: 15%; animation-delay: -4s; }
@@ -321,6 +499,50 @@ All colors MUST be HSL.
   .zodiac-symbol.capricorn { top: 60%; left: 95%; animation-delay: -18s; }
   .zodiac-symbol.aquarius { top: 90%; left: 65%; animation-delay: -20s; }
   .zodiac-symbol.pisces { top: 48%; left: 10%; animation-delay: -22s; }
+
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    .zodiac-symbol {
+      font-size: 1rem;
+      text-shadow: 0 0 4px hsl(45 100% 50% / 0.3);
+    }
+    
+    /* Mobile positioning - more compact */
+    .zodiac-symbol.aries { top: 15%; left: 15%; }
+    .zodiac-symbol.taurus { top: 25%; left: 85%; }
+    .zodiac-symbol.gemini { top: 35%; left: 10%; }
+    .zodiac-symbol.cancer { top: 45%; left: 80%; }
+    .zodiac-symbol.leo { top: 55%; left: 20%; }
+    .zodiac-symbol.virgo { top: 65%; left: 75%; }
+    .zodiac-symbol.libra { top: 75%; left: 50%; }
+    .zodiac-symbol.scorpio { top: 85%; left: 40%; }
+    .zodiac-symbol.sagittarius { top: 20%; left: 70%; }
+    .zodiac-symbol.capricorn { top: 30%; left: 90%; }
+    .zodiac-symbol.aquarius { top: 40%; left: 60%; }
+    .zodiac-symbol.pisces { top: 50%; left: 5%; }
+  }
+
+  /* Small mobile adjustments */
+  @media (max-width: 480px) {
+    .zodiac-symbol {
+      font-size: 0.8rem;
+      text-shadow: 0 0 3px hsl(45 100% 50% / 0.2);
+    }
+    
+    /* Even more compact for small screens */
+    .zodiac-symbol.aries { top: 12%; left: 12%; }
+    .zodiac-symbol.taurus { top: 22%; left: 88%; }
+    .zodiac-symbol.gemini { top: 32%; left: 8%; }
+    .zodiac-symbol.cancer { top: 42%; left: 82%; }
+    .zodiac-symbol.leo { top: 52%; left: 18%; }
+    .zodiac-symbol.virgo { top: 62%; left: 78%; }
+    .zodiac-symbol.libra { top: 72%; left: 48%; }
+    .zodiac-symbol.scorpio { top: 82%; left: 38%; }
+    .zodiac-symbol.sagittarius { top: 18%; left: 68%; }
+    .zodiac-symbol.capricorn { top: 28%; left: 92%; }
+    .zodiac-symbol.aquarius { top: 38%; left: 58%; }
+    .zodiac-symbol.pisces { top: 48%; left: 3%; }
+  }
 }
 
 @keyframes sparkle {
