@@ -76,9 +76,6 @@ const OrganizationalChart = () => {
       <div className="shooting-star"></div>
       <div className="shooting-star"></div>
       
-      {/* Aurora Borealis */}
-      <div className="aurora"></div>
-      
       {/* Floating Crystals */}
       <div className="crystal"></div>
       <div className="crystal"></div>
