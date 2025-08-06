@@ -621,3 +621,11 @@ All colors MUST be HSL.
   position: relative;
   z-index: 2;
 }
+
+/* Logo transparency enhancement */
+.logo-transparent {
+  background: transparent !important;
+  mix-blend-mode: color-dodge;
+  isolation: isolate;
+  backdrop-filter: none;
+}

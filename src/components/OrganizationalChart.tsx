@@ -101,12 +101,10 @@ const OrganizationalChart = () => {
               <img 
                 src="/lovable-uploads/a6296b81-6547-47cd-ac0a-c840ffa410a7.png" 
                 alt="KARMIQ Logo" 
-                className="relative w-16 h-16 md:w-20 md:h-20 object-contain transition-all duration-500 hover:scale-105"
+                className="relative w-16 h-16 md:w-20 md:h-20 object-contain transition-all duration-500 hover:scale-105 logo-transparent"
                 style={{ 
                   filter: 'drop-shadow(0 0 20px rgba(255, 215, 0, 0.3)) drop-shadow(0 0 40px rgba(255, 215, 0, 0.1))',
-                  mixBlendMode: 'screen',
-                  animation: 'logoGlow 3s ease-in-out infinite',
-                  backgroundColor: 'transparent'
+                  animation: 'logoGlow 3s ease-in-out infinite'
                 }}
               />
             </div>
