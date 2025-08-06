@@ -20,7 +20,7 @@ const OrganizationalChart = () => {
         { name: "Vivek Kumar Singh", role: "CEO and CTO" },
         { name: "Pradosh Priyadarshan", role: "CEO and CTO" },
         { name: "Kishore Kumar Nayak", role: "USA Management and Marketing" },
-        { name: "Atul Saswat", role: "Technology" },
+        { name: "Atul Saswat", role: "Technology Lead" },
         { name: "Omkar Ankit", role: "Marketing and Strategy" },
         { name: "Pritish Pradhan", role: "Marketing and Strategy" }
       ]
