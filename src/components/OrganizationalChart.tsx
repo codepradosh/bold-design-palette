@@ -98,18 +98,17 @@ const OrganizationalChart = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-6 bg-transparent text-primary-foreground px-8 py-6 rounded-2xl backdrop-blur-sm mb-6">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-transparent rounded-full blur-xl"></div>
               <img 
                 src="/lovable-uploads/a6296b81-6547-47cd-ac0a-c840ffa410a7.png" 
                 alt="KARMIQ Logo" 
                 className="relative w-16 h-16 md:w-20 md:h-20 object-contain transition-all duration-500 hover:scale-105"
                 style={{ 
                   filter: 'drop-shadow(0 0 20px rgba(255, 215, 0, 0.3)) drop-shadow(0 0 40px rgba(255, 215, 0, 0.1))',
-                  mixBlendMode: 'multiply',
-                  animation: 'logoGlow 3s ease-in-out infinite'
+                  mixBlendMode: 'screen',
+                  animation: 'logoGlow 3s ease-in-out infinite',
+                  backgroundColor: 'transparent'
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-radial from-yellow-300/10 via-transparent to-transparent rounded-full"></div>
             </div>
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-100">KARMIQ</h1>
