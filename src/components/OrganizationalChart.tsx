@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import CosmicMusicPlayer from './CosmicMusicPlayer';
+import BackgroundMusic from './BackgroundMusic';
 
 interface TeamMember {
   name: string;
@@ -72,6 +73,9 @@ const OrganizationalChart = () => {
 
   return (
     <div className="min-h-screen py-12 px-4 relative">
+      {/* Background Music */}
+      <BackgroundMusic />
+      
       {/* Shooting Stars */}
       <div className="shooting-star"></div>
       <div className="shooting-star"></div>
