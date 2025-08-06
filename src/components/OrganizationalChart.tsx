@@ -47,7 +47,7 @@ const OrganizationalChart = () => {
       name: "Astrology Department",
       color: "content",
       members: [
-        { name: "Deeptimayee Mishra", role: "Astrology Specialist" }
+        { name: "Deeptimayee Mishra", role: "Chief Astrologer" }
       ]
     }
   ];
