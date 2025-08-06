@@ -50,6 +50,20 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
+## Development Team
+
+### Core Team
+- **Pradosh** - Project Lead & Full Stack Developer
+- **Satya Bhusan** - Development Team Member (Monitoring & Support)
+
+### Responsibilities
+- **Satya Bhusan**: 
+  - Code review and quality assurance
+  - Bug monitoring and issue tracking
+  - Technical support and troubleshooting
+  - Performance optimization
+  - Documentation maintenance
+
 ## What technologies are used for this project?
 
 This project is built with:
