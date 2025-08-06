@@ -1120,13 +1120,11 @@ All colors MUST be HSL.
 
 /* Geeta Shloka */
 .geeta-shloka {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 40px;
   z-index: 10;
   pointer-events: none;
-  margin-bottom: 40px;
 }
 
 .shloka-container {
@@ -1143,6 +1141,7 @@ All colors MUST be HSL.
     inset 0 1px 0 hsl(45 100% 60% / 0.1);
   max-width: 600px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .shloka-text {
