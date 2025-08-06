@@ -41,16 +41,6 @@ const OrganizationalChart = () => {
         { name: "Shruti Rani", role: "Spiritual Content Manager" },
         { name: "Sonam Sanket", role: "Psychological Content Manager" }
       ]
-    },
-    {
-      name: "Business Development",
-      color: "business",
-      members: [
-        { name: "Omkar Ankit", role: "Marketing Head" },
-        { name: "Pritish Pradhan", role: "Marketing Head" },
-        { name: "Shruti Rani", role: "Spirituality and Strategy Head" },
-        { name: "Aditya Tripathy", role: "B2B School Tieups" }
-      ]
     }
   ];
 
@@ -81,7 +71,7 @@ const OrganizationalChart = () => {
         </div>
 
         {/* Teams Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
           {teams.map((team, teamIndex) => (
             <div key={teamIndex} className="space-y-6">
               {/* Team Header */}
@@ -111,6 +101,63 @@ const OrganizationalChart = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Business Development Hierarchical Chart */}
+        <div className="bg-card rounded-2xl shadow-xl p-8 mb-12 border">
+          <div className="relative">
+            {/* Business Development Header */}
+            <div className="text-center mb-12">
+              <Card className="inline-block px-8 py-4 bg-muted border-2 shadow-lg">
+                <h2 className="text-2xl font-bold text-primary">Business Development</h2>
+              </Card>
+            </div>
+
+            {/* Connecting line from header to first row */}
+            <div className="absolute top-24 left-1/2 w-0.5 h-12 bg-border transform -translate-x-0.5"></div>
+
+            {/* First Row - Marketing Heads and Strategy Head */}
+            <div className="flex justify-center mb-8">
+              <div className="flex gap-6 items-center">
+                {/* Horizontal connecting line */}
+                <div className="absolute w-96 h-0.5 bg-border"></div>
+                
+                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')} relative z-10`}>
+                  <div className="text-center">
+                    <h3 className="font-bold text-lg mb-2">Omkar Ankit</h3>
+                    <p className="text-sm font-medium opacity-90">Marketing Head</p>
+                  </div>
+                </Card>
+
+                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')} relative z-10`}>
+                  <div className="text-center">
+                    <h3 className="font-bold text-lg mb-2">Pritish Pradhan</h3>
+                    <p className="text-sm font-medium opacity-90">Marketing Head</p>
+                  </div>
+                </Card>
+
+                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')} relative z-10`}>
+                  <div className="text-center">
+                    <h3 className="font-bold text-lg mb-2">Shruti Rani</h3>
+                    <p className="text-sm font-medium opacity-90">Spiritual Development Strategy Head</p>
+                  </div>
+                </Card>
+              </div>
+            </div>
+
+            {/* Vertical connecting line to second row */}
+            <div className="absolute left-1/2 w-0.5 h-8 bg-border transform -translate-x-0.5"></div>
+
+            {/* Second Row - B2B School Tieups */}
+            <div className="flex justify-center">
+              <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')}`}>
+                <div className="text-center">
+                  <h3 className="font-bold text-lg mb-2">Aditya Tripathy</h3>
+                  <p className="text-sm font-medium opacity-90">B2B School Tieups</p>
+                </div>
+              </Card>
+            </div>
+          </div>
         </div>
 
         {/* Footer */}
