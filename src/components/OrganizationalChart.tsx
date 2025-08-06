@@ -32,7 +32,7 @@ const OrganizationalChart = () => {
         { name: "Surya Narayan Mohapatra", role: "GEN AI Developer" },
         { name: "Saumya Vani Namballa", role: "Java Full Stack" },
         { name: "Pramod Dhaygude", role: "Full Stack Developer" },
-        { name: "Satya Bhusan", role: "Development Team Member (Monitoring & Support)" }
+        { name: "Satya Bhusan", role: "Monitoring & Support" }
       ]
     },
     {
