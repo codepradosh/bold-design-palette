@@ -6,7 +6,7 @@ interface CosmicMusicPlayerProps {
 }
 
 const CosmicMusicPlayer: React.FC<CosmicMusicPlayerProps> = ({ 
-  audioSrc = '/background-music.mp3', 
+  audioSrc = '/Enchanting Flute - Krishna Aur Kans - Full Video Song.mp3', 
   autoPlay = false 
 }) => {
   const [isPlaying, setIsPlaying] = useState(false);
