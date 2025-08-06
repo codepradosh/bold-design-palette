@@ -76,9 +76,6 @@ const OrganizationalChart = () => {
       {/* Background Music */}
       <BackgroundMusic />
       
-      {/* Geeta Shloka */}
-      <GeetaShloka />
-      
       {/* Shooting Stars */}
       <div className="shooting-star"></div>
       <div className="shooting-star"></div>
@@ -244,6 +241,9 @@ const OrganizationalChart = () => {
           </Card>
         </div>
       </div>
+      
+      {/* Geeta Shloka */}
+      <GeetaShloka />
       
     </div>
   );
