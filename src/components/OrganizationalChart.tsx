@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import CosmicMusicPlayer from './CosmicMusicPlayer';
 
 interface TeamMember {
   name: string;
@@ -236,6 +237,9 @@ const OrganizationalChart = () => {
           </Card>
         </div>
       </div>
+      
+      {/* Cosmic Music Player */}
+      <CosmicMusicPlayer />
     </div>
   );
 };
