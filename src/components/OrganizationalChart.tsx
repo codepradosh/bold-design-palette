@@ -42,6 +42,13 @@ const OrganizationalChart = () => {
         { name: "Shruti Rani", role: "Spiritual Content Manager" },
         { name: "Sonam Sanket", role: "Psychological Content Manager" }
       ]
+    },
+    {
+      name: "Astrology Department",
+      color: "content",
+      members: [
+        { name: "Deeptimayee Mishra", role: "Astrology Specialist" }
+      ]
     }
   ];
 
@@ -87,7 +94,7 @@ const OrganizationalChart = () => {
         </div>
 
         {/* Teams Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {teams.map((team, teamIndex) => (
             <div key={teamIndex} className="space-y-6">
               {/* Team Header */}
