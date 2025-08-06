@@ -1,23 +1,8 @@
 import React from 'react';
 
-const FloatingPeacock: React.FC = () => {
+const GeetaShloka: React.FC = () => {
   return (
     <>
-      {/* Floating Peacock Feather */}
-      <div className="peacock-feather">
-        <div className="feather-body">
-          <div className="feather-eye eye-1"></div>
-          <div className="feather-eye eye-2"></div>
-          <div className="feather-eye eye-3"></div>
-          <div className="feather-eye eye-4"></div>
-          <div className="feather-eye eye-5"></div>
-          <div className="feather-eye eye-6"></div>
-          <div className="feather-eye eye-7"></div>
-          <div className="feather-eye eye-8"></div>
-        </div>
-        <div className="feather-stem"></div>
-      </div>
-
       {/* Geeta Shloka */}
       <div className="geeta-shloka">
         <div className="shloka-container">
@@ -34,4 +19,4 @@ const FloatingPeacock: React.FC = () => {
   );
 };
 
-export default FloatingPeacock; 
+export default GeetaShloka; 

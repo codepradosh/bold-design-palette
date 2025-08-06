@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import BackgroundMusic from './BackgroundMusic';
-import FloatingPeacock from './FloatingPeacock';
+import GeetaShloka from './FloatingPeacock';
 
 interface TeamMember {
   name: string;
@@ -76,8 +76,8 @@ const OrganizationalChart = () => {
       {/* Background Music */}
       <BackgroundMusic />
       
-      {/* Floating Peacock Feather & Geeta Shloka */}
-      <FloatingPeacock />
+      {/* Geeta Shloka */}
+      <GeetaShloka />
       
       {/* Shooting Stars */}
       <div className="shooting-star"></div>
