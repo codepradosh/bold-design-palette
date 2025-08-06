@@ -105,7 +105,8 @@ const OrganizationalChart = () => {
                 className="relative w-16 h-16 md:w-20 md:h-20 object-contain transition-all duration-500 hover:scale-105"
                 style={{ 
                   filter: 'drop-shadow(0 0 20px rgba(255, 215, 0, 0.3)) drop-shadow(0 0 40px rgba(255, 215, 0, 0.1))',
-                  mixBlendMode: 'multiply'
+                  mixBlendMode: 'multiply',
+                  animation: 'logoGlow 3s ease-in-out infinite'
                 }}
               />
               <div className="absolute inset-0 bg-gradient-radial from-yellow-300/10 via-transparent to-transparent rounded-full"></div>
