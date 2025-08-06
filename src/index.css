@@ -132,7 +132,14 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    background: var(--gradient-cosmic);
+    background: linear-gradient(135deg, 
+      hsl(240 25% 8%) 0%, 
+      hsl(260 30% 12%) 25%, 
+      hsl(280 35% 15%) 50%, 
+      hsl(300 40% 18%) 75%, 
+      hsl(320 45% 20%) 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 20s ease-in-out infinite;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
@@ -615,6 +622,90 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes shootingStar {
+  0% {
+    transform: translateX(-100px) translateY(0px) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(calc(100vh + 100px)) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes aurora {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-20px) scaleY(1.2);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px) scaleY(0.8);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-30px) scaleY(1.1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes crystalFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(-15px) rotate(90deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-5px) rotate(180deg);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translateY(-20px) rotate(270deg);
+    opacity: 0.9;
+  }
+}
+
+@keyframes energyWave {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(3) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+}
+
 @keyframes logoGlow {
   0%, 100% {
     filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3)) drop-shadow(0 0 40px rgba(255, 215, 0, 0.1));
@@ -746,6 +837,157 @@ All colors MUST be HSL.
   animation-delay: -14s, -7s;
   box-shadow: 0 0 10px rgba(30, 144, 255, 0.6);
 }
+
+/* Shooting Stars */
+.shooting-star {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: linear-gradient(45deg, transparent, #fff, transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.shooting-star::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transform: translateX(-100px);
+}
+
+.shooting-star:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation: shootingStar 8s linear infinite;
+  animation-delay: 0s;
+}
+
+.shooting-star:nth-child(2) {
+  top: 40%;
+  left: 20%;
+  animation: shootingStar 12s linear infinite;
+  animation-delay: 4s;
+}
+
+.shooting-star:nth-child(3) {
+  top: 60%;
+  left: 15%;
+  animation: shootingStar 10s linear infinite;
+  animation-delay: 8s;
+}
+
+/* Aurora Borealis */
+.aurora {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.aurora::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    hsl(120 80% 60% / 0.3) 20%, 
+    hsl(180 80% 60% / 0.4) 40%, 
+    hsl(240 80% 60% / 0.3) 60%, 
+    hsl(300 80% 60% / 0.4) 80%, 
+    transparent 100%);
+  animation: aurora 15s ease-in-out infinite;
+}
+
+.aurora::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    hsl(60 80% 60% / 0.2) 30%, 
+    hsl(120 80% 60% / 0.3) 50%, 
+    hsl(180 80% 60% / 0.2) 70%, 
+    transparent 100%);
+  animation: aurora 20s ease-in-out infinite reverse;
+}
+
+/* Floating Crystals */
+.crystal {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, 
+    hsl(200 80% 70% / 0.6), 
+    hsl(280 80% 70% / 0.6), 
+    hsl(320 80% 70% / 0.6));
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.crystal:nth-child(1) {
+  top: 15%;
+  left: 80%;
+  animation: crystalFloat 8s ease-in-out infinite;
+}
+
+.crystal:nth-child(2) {
+  top: 35%;
+  left: 85%;
+  animation: crystalFloat 12s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+.crystal:nth-child(3) {
+  top: 55%;
+  left: 90%;
+  animation: crystalFloat 10s ease-in-out infinite;
+  animation-delay: -8s;
+}
+
+.crystal:nth-child(4) {
+  top: 75%;
+  left: 88%;
+  animation: crystalFloat 15s ease-in-out infinite;
+  animation-delay: -12s;
+}
+
+/* Energy Waves */
+.energy-waves {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.energy-wave {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid hsl(45 100% 60% / 0.3);
+  border-radius: 50%;
+  animation: energyWave 4s ease-out infinite;
+}
+
+.energy-wave:nth-child(1) { animation-delay: 0s; }
+.energy-wave:nth-child(2) { animation-delay: 1s; }
+.energy-wave:nth-child(3) { animation-delay: 2s; }
 
 /* Ensure content stays above background effects */
 #root {

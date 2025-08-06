@@ -71,6 +71,27 @@ const OrganizationalChart = () => {
 
   return (
     <div className="min-h-screen py-12 px-4 relative">
+      {/* Shooting Stars */}
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      
+      {/* Aurora Borealis */}
+      <div className="aurora"></div>
+      
+      {/* Floating Crystals */}
+      <div className="crystal"></div>
+      <div className="crystal"></div>
+      <div className="crystal"></div>
+      <div className="crystal"></div>
+      
+      {/* Energy Waves */}
+      <div className="energy-waves">
+        <div className="energy-wave"></div>
+        <div className="energy-wave"></div>
+        <div className="energy-wave"></div>
+      </div>
+      
       {/* Solar System Planets */}
       <div className="solar-system">
         <div className="planet mercury"></div>
