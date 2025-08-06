@@ -1120,7 +1120,7 @@ All colors MUST be HSL.
 
 /* Geeta Shloka */
 .geeta-shloka {
-  position: fixed;
+  position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
