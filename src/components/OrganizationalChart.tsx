@@ -150,7 +150,7 @@ const OrganizationalChart = () => {
             <div key={teamIndex} className="space-y-6">
               {/* Team Header */}
               <div className="text-center relative">
-                <h2 className="text-xl font-bold text-foreground mb-6 px-6 py-3 bg-gradient-to-r from-card to-card/80 rounded-xl shadow-lg border-2 border-border/50 backdrop-blur-sm">
+                <h2 className="text-xl font-bold text-foreground mb-6 px-6 py-3 bg-gradient-to-r from-card to-card/80 rounded-xl shadow-lg border-2 border-border/50 backdrop-blur-sm relative z-20">
                   {team.name}
                 </h2>
                 {/* Connecting line from header to first member */}
@@ -162,7 +162,7 @@ const OrganizationalChart = () => {
                 {team.members.map((member, memberIndex) => (
                   <div key={memberIndex} className="relative">
                     <Card
-                      className={`p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 ${getTeamColorClasses(team.color)} relative z-10`}
+                      className={`p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 ${getTeamColorClasses(team.color)} relative z-20`}
                     >
                       <div className="text-center">
                         <h3 className="font-bold text-lg mb-2 leading-tight">
@@ -189,7 +189,7 @@ const OrganizationalChart = () => {
           <div className="relative">
             {/* Business Development Header */}
             <div className="text-center mb-12">
-              <Card className="inline-block px-8 py-4 bg-gradient-to-r from-card to-card/80 border-2 border-border/50 shadow-lg backdrop-blur-sm">
+              <Card className="inline-block px-8 py-4 bg-gradient-to-r from-card to-card/80 border-2 border-border/50 shadow-lg backdrop-blur-sm relative z-20">
                 <h2 className="text-2xl font-bold text-foreground">Business Development</h2>
               </Card>
             </div>
@@ -197,21 +197,21 @@ const OrganizationalChart = () => {
             {/* First Row - Marketing Heads and Strategy Head */}
             <div className="flex justify-center mb-8">
               <div className="flex gap-8 items-center">
-                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')}`}>
+                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')} relative z-20`}>
                   <div className="text-center">
                     <h3 className="font-bold text-lg mb-2">Omkar Ankit</h3>
                     <p className="text-sm font-medium opacity-90">Marketing Head</p>
                   </div>
                 </Card>
 
-                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')}`}>
+                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')} relative z-20`}>
                   <div className="text-center">
                     <h3 className="font-bold text-lg mb-2">Pritish Pradhan</h3>
                     <p className="text-sm font-medium opacity-90">Marketing Head</p>
                   </div>
                 </Card>
 
-                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')}`}>
+                <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')} relative z-20`}>
                   <div className="text-center">
                     <h3 className="font-bold text-lg mb-2">Shruti Rani</h3>
                     <p className="text-sm font-medium opacity-90">Spiritual Growth Head</p>
@@ -222,7 +222,7 @@ const OrganizationalChart = () => {
 
             {/* Second Row - B2B School Tieups */}
             <div className="flex justify-center">
-              <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')}`}>
+              <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')} relative z-20`}>
                 <div className="text-center">
                   <h3 className="font-bold text-lg mb-2">Aditya Tripathy</h3>
                   <p className="text-sm font-medium opacity-90">B2B School Tieups</p>
@@ -234,7 +234,7 @@ const OrganizationalChart = () => {
 
         {/* Footer */}
         <div className="text-center">
-          <Card className="inline-block px-8 py-4 bg-card/80 backdrop-blur-sm border shadow-lg">
+          <Card className="inline-block px-8 py-4 bg-card/80 backdrop-blur-sm border shadow-lg relative z-20">
             <p className="text-muted-foreground font-medium text-lg">
               Empowering wellness through technology and human connection
             </p>
