@@ -29,8 +29,8 @@ const OrganizationalChart = () => {
       name: "Development Team",
       color: "development",
       members: [
-        { name: "Surya Narayan Mohapatra", role: "GEN AI Developer" },
         { name: "Saumya Vani Namballa", role: "Full Stack ML ops" },
+        { name: "Surya Narayan Mohapatra", role: "GEN AI Developer" },
         { name: "Pramod Dhaygude", role: "Full Stack Developer" },
         { name: "Satya Bhusan", role: "Monitoring & Support" }
       ]
