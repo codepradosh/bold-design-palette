@@ -73,6 +73,23 @@ const OrganizationalChart = () => {
     <div className="min-h-screen py-12 px-4 relative">
       {/* Zodiac ring background effect */}
       <div className="zodiac-ring"></div>
+      
+      {/* Floating Zodiac Signs */}
+      <div className="zodiac-signs">
+        <div className="zodiac-sign aries">♈</div>
+        <div className="zodiac-sign taurus">♉</div>
+        <div className="zodiac-sign gemini">♊</div>
+        <div className="zodiac-sign cancer">♋</div>
+        <div className="zodiac-sign leo">♌</div>
+        <div className="zodiac-sign virgo">♍</div>
+        <div className="zodiac-sign libra">♎</div>
+        <div className="zodiac-sign scorpio">♏</div>
+        <div className="zodiac-sign sagittarius">♐</div>
+        <div className="zodiac-sign capricorn">♑</div>
+        <div className="zodiac-sign aquarius">♒</div>
+        <div className="zodiac-sign pisces">♓</div>
+      </div>
+      
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
