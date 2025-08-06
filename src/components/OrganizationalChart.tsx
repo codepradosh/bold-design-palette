@@ -74,20 +74,23 @@ const OrganizationalChart = () => {
       {/* Zodiac ring background effect */}
       <div className="zodiac-ring"></div>
       
-      {/* Floating Zodiac Signs */}
-      <div className="zodiac-signs">
-        <div className="zodiac-sign aries">♈</div>
-        <div className="zodiac-sign taurus">♉</div>
-        <div className="zodiac-sign gemini">♊</div>
-        <div className="zodiac-sign cancer">♋</div>
-        <div className="zodiac-sign leo">♌</div>
-        <div className="zodiac-sign virgo">♍</div>
-        <div className="zodiac-sign libra">♎</div>
-        <div className="zodiac-sign scorpio">♏</div>
-        <div className="zodiac-sign sagittarius">♐</div>
-        <div className="zodiac-sign capricorn">♑</div>
-        <div className="zodiac-sign aquarius">♒</div>
-        <div className="zodiac-sign pisces">♓</div>
+      {/* Constellation Background with Star Patterns */}
+      <div className="constellation-bg"></div>
+      
+      {/* Subtle Zodiac Symbols */}
+      <div className="zodiac-symbols">
+        <div className="zodiac-symbol aries">♈</div>
+        <div className="zodiac-symbol taurus">♉</div>
+        <div className="zodiac-symbol gemini">♊</div>
+        <div className="zodiac-symbol cancer">♋</div>
+        <div className="zodiac-symbol leo">♌</div>
+        <div className="zodiac-symbol virgo">♍</div>
+        <div className="zodiac-symbol libra">♎</div>
+        <div className="zodiac-symbol scorpio">♏</div>
+        <div className="zodiac-symbol sagittarius">♐</div>
+        <div className="zodiac-symbol capricorn">♑</div>
+        <div className="zodiac-symbol aquarius">♒</div>
+        <div className="zodiac-symbol pisces">♓</div>
       </div>
       
       <div className="max-w-7xl mx-auto">
