@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import BackgroundMusic from './BackgroundMusic';
+import FloatingPeacock from './FloatingPeacock';
 
 interface TeamMember {
   name: string;
@@ -74,6 +75,9 @@ const OrganizationalChart = () => {
     <div className="min-h-screen py-12 px-4 relative">
       {/* Background Music */}
       <BackgroundMusic />
+      
+      {/* Floating Peacock Feather & Geeta Shloka */}
+      <FloatingPeacock />
       
       {/* Shooting Stars */}
       <div className="shooting-star"></div>
