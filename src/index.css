@@ -625,7 +625,8 @@ All colors MUST be HSL.
 /* Logo transparency enhancement */
 .logo-transparent {
   background: transparent !important;
-  mix-blend-mode: color-dodge;
+  mix-blend-mode: screen;
   isolation: isolate;
   backdrop-filter: none;
+  filter: brightness(1.1) contrast(1.2);
 }
