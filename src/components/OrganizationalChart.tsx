@@ -30,7 +30,7 @@ const OrganizationalChart = () => {
       color: "development",
       members: [
         { name: "Surya Narayan Mohapatra", role: "GEN AI Developer" },
-        { name: "Saumya Vani Namballa", role: "Java Full Stack" },
+        { name: "Saumya Vani Namballa", role: "Full Stack ML ops" },
         { name: "Pramod Dhaygude", role: "Full Stack Developer" },
         { name: "Satya Bhusan", role: "Monitoring & Support" }
       ]
@@ -165,7 +165,7 @@ const OrganizationalChart = () => {
                 <Card className={`p-6 shadow-lg border-2 ${getTeamColorClasses('business')}`}>
                   <div className="text-center">
                     <h3 className="font-bold text-lg mb-2">Shruti Rani</h3>
-                    <p className="text-sm font-medium opacity-90">Spiritual Development Strategy Head</p>
+                    <p className="text-sm font-medium opacity-90">Spiritual Growth Head</p>
                   </div>
                 </Card>
               </div>
