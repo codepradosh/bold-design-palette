@@ -99,7 +99,7 @@ const OrganizationalChart = () => {
           <div className="inline-flex items-center gap-6 bg-transparent text-primary-foreground px-8 py-6 rounded-2xl backdrop-blur-sm mb-6">
             <div className="relative">
               <img 
-                src="/lovable-uploads/a6296b81-6547-47cd-ac0a-c840ffa410a7.png" 
+                src="/lovable-uploads/image.png" 
                 alt="KARMIQ Logo" 
                 className="relative w-16 h-16 md:w-20 md:h-20 object-contain transition-all duration-500 hover:scale-105 logo-transparent"
                 style={{ 
