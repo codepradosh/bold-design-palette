@@ -68,6 +68,10 @@ export default {
 					DEFAULT: 'hsl(var(--business))',
 					foreground: 'hsl(var(--business-foreground))'
 				},
+				astrology: {
+					DEFAULT: 'hsl(var(--astrology))',
+					foreground: 'hsl(var(--astrology-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

@@ -7,7 +7,7 @@ interface TeamMember {
 
 interface Team {
   name: string;
-  color: 'executive' | 'development' | 'content' | 'business';
+  color: 'executive' | 'development' | 'content' | 'business' | 'astrology';
   members: TeamMember[];
 }
 
@@ -45,7 +45,7 @@ const OrganizationalChart = () => {
     },
     {
       name: "Astrology Team",
-      color: "content",
+      color: "astrology",
       members: [
         { name: "Deeptimayee Mishra", role: "Chief Astrologer" }
       ]
@@ -62,6 +62,8 @@ const OrganizationalChart = () => {
         return 'bg-content text-content-foreground border-content/20';
       case 'business':
         return 'bg-business text-business-foreground border-business/20';
+      case 'astrology':
+        return 'bg-astrology text-astrology-foreground border-astrology/20';
       default:
         return 'bg-primary text-primary-foreground';
     }
