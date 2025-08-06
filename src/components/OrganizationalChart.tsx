@@ -109,7 +109,7 @@ const OrganizationalChart = () => {
               />
             </div>
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-100">KARMIQ</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-100" style={{ animation: 'logoGlow 3s ease-in-out infinite' }}>Karmiq</h1>
               <p className="text-lg md:text-xl font-medium opacity-90">Spiritual And Wellness Platform</p>
             </div>
           </div>
