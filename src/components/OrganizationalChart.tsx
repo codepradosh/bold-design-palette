@@ -60,18 +60,19 @@ const OrganizationalChart = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-muted/30 py-12 px-4">
+    <div className="min-h-screen py-12 px-4 relative">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-6 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-8 py-6 rounded-2xl shadow-2xl mb-6">
+          <div className="inline-flex items-center gap-6 bg-gradient-to-r from-primary to-accent text-primary-foreground px-8 py-6 rounded-2xl shadow-2xl border border-accent/30 backdrop-blur-sm mb-6" style={{ boxShadow: 'var(--glow-cosmic)' }}>
             <img 
               src="/lovable-uploads/a6296b81-6547-47cd-ac0a-c840ffa410a7.png" 
               alt="KARMIQ Logo" 
-              className="w-16 h-16 md:w-20 md:h-20 object-contain"
+              className="w-16 h-16 md:w-20 md:h-20 object-contain drop-shadow-lg"
+              style={{ filter: 'drop-shadow(var(--glow-star))' }}
             />
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-2">KARMIQ</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-100">KARMIQ</h1>
               <p className="text-lg md:text-xl font-medium opacity-90">Spiritual And Wellness Platform</p>
             </div>
           </div>
