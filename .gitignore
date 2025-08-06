@@ -23,5 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-# Large image files
-public/peacock-feather.png
+
