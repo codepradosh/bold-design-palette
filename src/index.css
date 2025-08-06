@@ -597,6 +597,22 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes planetOrbit {
+  0% { transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes planetGlow {
+  0%, 100% { 
+    opacity: 0.6; 
+    filter: brightness(1) drop-shadow(0 0 10px currentColor);
+  }
+  50% { 
+    opacity: 1; 
+    filter: brightness(1.3) drop-shadow(0 0 20px currentColor);
+  }
+}
+
 @keyframes logoGlow {
   0%, 100% {
     filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3)) drop-shadow(0 0 40px rgba(255, 215, 0, 0.1));
@@ -614,6 +630,103 @@ All colors MUST be HSL.
     filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.5)) drop-shadow(0 0 50px rgba(255, 215, 0, 0.2)) drop-shadow(0 0 80px rgba(255, 215, 0, 0.1));
     transform: scale(1.02);
   }
+}
+
+/* Solar System Planets */
+.solar-system {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  animation: planetOrbit 20s linear infinite, planetGlow 4s ease-in-out infinite;
+}
+
+.planet.mercury {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(45deg, #8B4513, #CD853F);
+  top: 15%;
+  left: 10%;
+  animation-duration: 15s, 3s;
+  animation-delay: 0s, 0s;
+}
+
+.planet.venus {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  top: 25%;
+  left: 85%;
+  animation-duration: 18s, 4s;
+  animation-delay: -2s, -1s;
+}
+
+.planet.earth {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(45deg, #4169E1, #00CED1);
+  top: 35%;
+  left: 15%;
+  animation-duration: 22s, 5s;
+  animation-delay: -4s, -2s;
+}
+
+.planet.mars {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(45deg, #DC143C, #FF6347);
+  top: 45%;
+  left: 80%;
+  animation-duration: 25s, 3.5s;
+  animation-delay: -6s, -3s;
+}
+
+.planet.jupiter {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #DAA520, #F4A460);
+  top: 55%;
+  left: 20%;
+  animation-duration: 30s, 6s;
+  animation-delay: -8s, -4s;
+}
+
+.planet.saturn {
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(45deg, #F0E68C, #D2B48C);
+  top: 65%;
+  left: 75%;
+  animation-duration: 35s, 4.5s;
+  animation-delay: -10s, -5s;
+}
+
+.planet.uranus {
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(45deg, #40E0D0, #87CEEB);
+  top: 75%;
+  left: 25%;
+  animation-duration: 40s, 5.5s;
+  animation-delay: -12s, -6s;
+}
+
+.planet.neptune {
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(45deg, #1E90FF, #4169E1);
+  top: 85%;
+  left: 70%;
+  animation-duration: 45s, 4s;
+  animation-delay: -14s, -7s;
 }
 
 /* Ensure content stays above background effects */

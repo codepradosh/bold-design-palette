@@ -71,6 +71,18 @@ const OrganizationalChart = () => {
 
   return (
     <div className="min-h-screen py-12 px-4 relative">
+      {/* Solar System Planets */}
+      <div className="solar-system">
+        <div className="planet mercury"></div>
+        <div className="planet venus"></div>
+        <div className="planet earth"></div>
+        <div className="planet mars"></div>
+        <div className="planet jupiter"></div>
+        <div className="planet saturn"></div>
+        <div className="planet uranus"></div>
+        <div className="planet neptune"></div>
+      </div>
+      
       {/* Zodiac ring background effect */}
       <div className="zodiac-ring"></div>
       
