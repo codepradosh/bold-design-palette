@@ -6,7 +6,7 @@ const GeetaShloka: React.FC = () => {
       {/* Peacock Feather */}
       <div className="peacock-feather-container">
         <img 
-          src="/ChatGPT Image Aug 7, 2025, 01_46_14 AM.png" 
+          src="/peacock-feather.png" 
           alt="Peacock Feather" 
           className="peacock-feather-image"
         />
