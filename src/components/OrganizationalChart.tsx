@@ -71,6 +71,8 @@ const OrganizationalChart = () => {
 
   return (
     <div className="min-h-screen py-12 px-4 relative">
+      {/* Zodiac ring background effect */}
+      <div className="zodiac-ring"></div>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
