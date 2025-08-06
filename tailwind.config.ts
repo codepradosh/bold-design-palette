@@ -52,6 +52,22 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				executive: {
+					DEFAULT: 'hsl(var(--executive))',
+					foreground: 'hsl(var(--executive-foreground))'
+				},
+				development: {
+					DEFAULT: 'hsl(var(--development))',
+					foreground: 'hsl(var(--development-foreground))'
+				},
+				content: {
+					DEFAULT: 'hsl(var(--content))',
+					foreground: 'hsl(var(--content-foreground))'
+				},
+				business: {
+					DEFAULT: 'hsl(var(--business))',
+					foreground: 'hsl(var(--business-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
