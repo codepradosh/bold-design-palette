@@ -76,12 +76,6 @@ const OrganizationalChart = () => {
       <div className="shooting-star"></div>
       <div className="shooting-star"></div>
       
-      {/* Floating Crystals */}
-      <div className="crystal"></div>
-      <div className="crystal"></div>
-      <div className="crystal"></div>
-      <div className="crystal"></div>
-      
       {/* Energy Waves */}
       <div className="energy-waves">
         <div className="energy-wave"></div>
