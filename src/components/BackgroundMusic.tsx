@@ -18,8 +18,8 @@ const BackgroundMusic: React.FC = () => {
     audio.preload = 'auto';
 
     // Check if audio can play
-    const canPlay = audio.canPlayType('audio/mpeg');
-    console.log('Can play MP3:', canPlay);
+    const canPlay = audio.canPlayType('audio/mp4');
+    console.log('Can play M4A:', canPlay);
 
     // Handle audio load
     const handleCanPlay = () => {
@@ -78,7 +78,7 @@ const BackgroundMusic: React.FC = () => {
   return (
     <audio
       ref={audioRef}
-      src="/Enchanting Flute - Krishna Aur Kans - Full Video Song.mp3"
+      src="/background-music-small.m4a"
       preload="auto"
       controls={false}
     />
