@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const BackgroundMusic: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -12,33 +13,50 @@ const BackgroundMusic: React.FC = () => {
     audio.volume = 0.3; // Start at 30% volume for background music
     audio.preload = 'auto';
 
-    // Auto-play the music (muted initially for better UX)
-    const playMusic = async () => {
+    // Function to start music
+    const startMusic = async () => {
       try {
         audio.muted = false;
         await audio.play();
+        setIsPlaying(true);
+        console.log('Background music started successfully');
       } catch (error) {
         console.log('Auto-play prevented by browser. User needs to interact first.');
-        // Add a one-time click listener to start music
-        const startMusic = () => {
-          audio.play();
-          document.removeEventListener('click', startMusic);
-        };
-        document.addEventListener('click', startMusic);
+        setIsPlaying(false);
       }
     };
 
-    // Start playing after a short delay
-    const timer = setTimeout(playMusic, 1000);
+    // Add multiple event listeners for user interaction
+    const events = ['click', 'touchstart', 'keydown', 'scroll'];
+    const handleUserInteraction = () => {
+      if (!isPlaying) {
+        startMusic();
+        // Remove all event listeners after first interaction
+        events.forEach(event => {
+          document.removeEventListener(event, handleUserInteraction);
+        });
+      }
+    };
+
+    // Add event listeners for user interaction
+    events.forEach(event => {
+      document.addEventListener(event, handleUserInteraction, { once: true });
+    });
+
+    // Try to auto-play after a delay
+    const timer = setTimeout(startMusic, 2000);
 
     return () => {
       clearTimeout(timer);
+      events.forEach(event => {
+        document.removeEventListener(event, handleUserInteraction);
+      });
       if (audio) {
         audio.pause();
         audio.currentTime = 0;
       }
     };
-  }, []);
+  }, [isPlaying]);
 
   return (
     <audio
