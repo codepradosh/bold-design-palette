@@ -3,6 +3,15 @@ import React from 'react';
 const GeetaShloka: React.FC = () => {
   return (
     <>
+      {/* Peacock Feather */}
+      <div className="peacock-feather-container">
+        <img 
+          src="/peacock-feather.png" 
+          alt="Peacock Feather" 
+          className="peacock-feather-image"
+        />
+      </div>
+      
       {/* Geeta Shloka */}
       <div className="geeta-shloka">
         <div className="shloka-container">
