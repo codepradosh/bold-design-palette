@@ -1,0 +1,14 @@
+Subject: DH Automation Reporting Tool – Azure Subscription Cost Centre
+
+Hi Steve,
+
+The cost centre we received from MyHub (ZZWG) is not available in the Azure subscription onboarding form.
+
+We were trying to take a dev server under the Azure subscription for the DH Automation Reporting Tool project. I also tried using Kishore’s cost centre and mine, but since they are CS-tagged, they are not showing up (as seen in the screenshot).
+
+However, when searching for the cost centre tagged under your name, it appears correctly in the form (screenshot attached).
+
+Could you please guide us if we should proceed with using your cost centre for this setup?
+
+Thanks,
+[Your Name]
